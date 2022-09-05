@@ -50,6 +50,11 @@ function ContactForm() {
                     <label htmlFor='message'>Message:</label>
                     <textarea name='message' rows='7' defaultValue={message} onChange={handleChange}/>
                 </div>
+                {errorMessage && (
+                    <div>
+                        <p className='error-text'>{errorMessage}</p>
+                    </div>
+                )}
                 <button type='submit'>Submit</button>
             </form>
         </section>
