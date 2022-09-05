@@ -26,11 +26,6 @@ function Header() {
 
     return (
         <div>
-            <nav>
-                <div>
-                    <h1></h1>
-                </div>
-            </nav>
             <Nav
                 currentPage = {currentPage}
                 setCurrentPage = {setCurrentPage}
