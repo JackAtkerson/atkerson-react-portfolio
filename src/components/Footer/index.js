@@ -4,7 +4,7 @@ function Footer() {
     return (
         <footer>
             <div>
-                <p>I Hate this Project so fucking much</p>
+                <p>Feet</p>
             </div>
         </footer>
     )
