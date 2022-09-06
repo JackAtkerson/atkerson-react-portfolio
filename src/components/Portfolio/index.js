@@ -4,101 +4,56 @@ import Project from '../Project';
 function Portfolio() {
     const projects = [
         {
-            name: 'Horiseon',
-            image: '',
-            description: 'Good site',
-            repo: '',
-            link: ''
-        },
-        {
             name: 'Pitcher Perfect',
-            image: '',
-            description: '',
-            repo: '',
+            image: '../../assets/images/pitcher-perfect.png',
+            description: 'An app that will locate breweries in your area',
+            repo: 'https://github.com/JackAtkerson/pitcher-perfect',
             link: ''
         },
         {
             name: 'Ship Space',
-            image: '',
+            image: '../../assets/images/ship-space.png',
+            description: 'A website used for logistics',
+            repo: 'https://github.com/JackAtkerson/ship-space',
+            link: 'https://ship-space.herokuapp.com/'
+        },
+        {
+            name: 'Budget Tracker',
+            image: '../../assets/images/',
             description: '',
             repo: '',
             link: ''
         },
         {
             name: 'Run Buddy',
-            image: '',
+            image: '../../assets/images/run-buddy.png',
             description: '',
             repo: '',
             link: ''
         },
         {
             name: 'Robot Gladiators',
-            image: '',
+            image: '../../assets/images/robot-gladiators.png',
             description: '',
             repo: '',
             link: ''
         },
         {
-            name: 'Budget Tracker',
-            image: '',
-            description: '',
+            name: 'Horiseon',
+            image: '../../assets/images/horiseon.png',
+            description: 'Good site',
             repo: '',
             link: ''
         },
-        {
-            name: 'Password Generator',
-            image: '',
-            description: '',
-            repo: '',
-            link: ''
-        },
-        {
-            name: 'README Generator',
-            image: '',
-            description: '',
-            repo: '',
-            link: ''
-        }
     ];
 
     return (
-        <section>
-            <div className='center'>
-                <h1>Portfolio</h1>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <Project projects={projects[0]}></Project>
-                    </li>
-                    <li>
-                        <Project projects={projects[1]}></Project>
-                    </li>
-                    <li>
-                        <Project projects={projects[2]}></Project>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <Project projects={projects[3]}></Project>
-                    </li>
-                    <li>
-                        <Project projects={projects[4]}></Project>
-                    </li>
-                    <li>
-                        <Project projects={projects[5]}></Project>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <Project projects={projects[6]}></Project>
-                    </li>
-                    <li>
-                        <Project projects={projects[7]}></Project>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        <div>
+            <p>Portfolio</p>
+            <hr />
+
+            <Project projects={projects}></Project>
+        </div>
     );
 };
 
