@@ -6,15 +6,13 @@ function Portfolio() {
         {
             name: 'Horiseon',
             image: '',
-            alt: '',
-            description: '',
+            description: 'Good site',
             repo: '',
             link: ''
         },
         {
             name: 'Pitcher Perfect',
             image: '',
-            alt: '',
             description: '',
             repo: '',
             link: ''
@@ -22,7 +20,6 @@ function Portfolio() {
         {
             name: 'Ship Space',
             image: '',
-            alt: '',
             description: '',
             repo: '',
             link: ''
@@ -30,7 +27,6 @@ function Portfolio() {
         {
             name: 'Run Buddy',
             image: '',
-            alt: '',
             description: '',
             repo: '',
             link: ''
@@ -38,7 +34,6 @@ function Portfolio() {
         {
             name: 'Robot Gladiators',
             image: '',
-            alt: '',
             description: '',
             repo: '',
             link: ''
@@ -46,7 +41,6 @@ function Portfolio() {
         {
             name: 'Budget Tracker',
             image: '',
-            alt: '',
             description: '',
             repo: '',
             link: ''
@@ -54,7 +48,6 @@ function Portfolio() {
         {
             name: 'Password Generator',
             image: '',
-            alt: '',
             description: '',
             repo: '',
             link: ''
@@ -62,7 +55,6 @@ function Portfolio() {
         {
             name: 'README Generator',
             image: '',
-            alt: '',
             description: '',
             repo: '',
             link: ''
