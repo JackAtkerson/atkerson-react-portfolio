@@ -7,33 +7,33 @@ import Resume from './components/Resume';
 import './App.css';
 
 function App() {
-  const [currentCategory, setCurrentCategory] = useState('about');
+  const [currentTab, setCurrentTab] = useState("about");
 
-  const renderPage = () => {
-    switch (currentCategory) {
-      case 'about':
-        return <About />;
-      case 'portfolio':
-        return <Portfolio />;
-      case 'resume':
-        return <Resume />;
-      case 'contact':
-        return <Contact />;
-      default:
-        return null;
-    }
-  };
+	// This function checks to see which tab is selected and then generates the appropriate tab.
+	const renderTab = () => {
+		switch (currentTab) {
+			case "about":
+				return <About />;
+			case "portfolio":
+				return <Portfolio />;
+			case "contact":
+				return <Contact />;
+			case "resume":
+				return <Resume />;
+			default:
+				return null;
+		}
+	};
 
   return (
     <div>
+      <header>
+        <Header currentTab={currentTab} setCurrentTab={setCurrentTab}></Header>
+      </header>
       <div>
-        <Header
-          currentCategory = {currentCategory}
-          setCurrentCategory = {setCurrentCategory}
-        ></Header>
-      </div>
-      <div>
-        <main>{renderPage()}</main>
+        <main>
+          {renderTab()}
+        </main>
       </div>
       <div>
       </div>

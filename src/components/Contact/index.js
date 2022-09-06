@@ -10,11 +10,10 @@ function ContactForm() {
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
             console.log(isValid);
-
             if (!isValid) {
-                setErrorMessage('Please enter a valid email address')
+                setErrorMessage('Please enter a valid email address');
             } else {
-                setErrorMessage('')
+                setErrorMessage('');
             }
         } else {
             if (!e.target.value.length) {
@@ -23,16 +22,16 @@ function ContactForm() {
                 setErrorMessage('');
             }
         }
+
         if (!errorMessage) {
-            setFormState({...formState, [e.target.name]: e.target.value });
+            setFormState({...formState, [e.target.name]: e.target.value});
         }
     }
 
     function handleSubmit(e) {
         e.preventDefault();
+        console.log(formState);
     }
-
-    console.log(formState)
 
     return (
         <section>
