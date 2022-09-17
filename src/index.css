@@ -5,12 +5,11 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #0D3B66;
-  --secondary: #C39209;
-  --tertiary: #710000;
-  --light: #FAF0CA;
-  --dark: #000000;
-  --darker: #111111;
+  --primary: darkred;
+  --secondary: goldenrod;
+  --light: antiquewhite;
+  --dark: #0D3B66;
+  --darker: #000000;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -23,9 +22,6 @@ main {
 
 body {
   min-height: 100%;
-}
-
-body {
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -33,9 +29,8 @@ body {
   font-size: 18px;
   letter-spacing: .1em;
   background: var(--light);
-  color: var(--primary);
-  font-family: 'Georgia';
-
+  color: var(--dark);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1 {
@@ -78,12 +73,33 @@ a:hover {
 }
 
 header {
-  background: var(--tertiary);
-}
-
-header a {
-  color: var(--light);
-}
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 00px;
+  background-color:var(--primary);
+  color:var(--secondary);
+ }
+ 
+ header nav {
+  margin: 5px 0;
+ }
+ 
+ header nav h1 {
+  padding: 0 10px;
+ }
+ 
+ header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  list-style: none;
+ }
+    
+ header nav ul li {
+  padding: 20px;
+  font-size: 25px;
+ }
 
 img {
   max-width: 100%;
@@ -100,7 +116,7 @@ form {
 footer {
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-style:italic;
-  background-color: var(--tertiary)
+  background: var(--dark);
 }
 
 input {
@@ -119,10 +135,6 @@ input:focus {
 
 li {
   list-style: none;
-}
-
-nav a:hover {
-  text-decoration: none;
 }
 
 nav  li {
@@ -224,6 +236,33 @@ a {
   justify-content: center;
 }
 
-.bio {
-  display: flex;
+.home-link {
+  font-size: 42px;
 }
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bio {
+  text-align: center;
+}
+
+.bio-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 75px;
+}
+
+.section-title {
+  color: var(--secondary-color);
+  text-align:center;
+  font-size: 50px;
+  border-bottom: 3px solid;
+  padding-bottom: 10px;
+  margin: 0 auto 35px auto;
+  width: 50%;
+ }   

@@ -7,9 +7,6 @@ function Header(props) {
     return (
         <header>
             <div>
-                <h2>Jack Atkerson</h2>
-            </div>
-            <div>
                 <Nav currentPage={currentPage} setCurrentPage={setCurrentPage}></Nav>
             </div>
         </header>
