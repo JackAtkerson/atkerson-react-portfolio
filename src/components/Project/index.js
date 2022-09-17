@@ -10,13 +10,14 @@ function Project(props) {
     const repo = currentProject.repo;
 
     return (
-        <div>
+        <div className="column is-10">
             <h3>{name}</h3>
             <p>{description}</p>
             <img alt=''>{image}</img>
             <a href={link}>Deployed Application</a>
             <a href={repo}>GitHub Repo</a>
         </div>
+        
     );
 }
 

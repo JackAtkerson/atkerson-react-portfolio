@@ -3,9 +3,17 @@ import aboutImage from '../../assets/images/about_headshot.jpg'
 
 function About() {
     return (
-        <section className='my-5'>
-            <h1 id='about'>This is me</h1>
-            <img src={aboutImage} className='my-2' style={{ width:'100%' }} alt='Jack Atkerson' />
+        <section className='is-ancestor'>
+            <div className='is-parent container is-justify-content-center'>
+                <div className='is-child'>
+                    <h1>This is Me</h1>
+                    <img src={aboutImage} alt='Jack Atkerson' />
+                </div>
+
+                <div>
+                    <p className='bio'>Bio Text goes here</p>
+                </div>
+            </div>
         </section>
     );
 }

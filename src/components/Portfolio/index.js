@@ -48,16 +48,46 @@ function Portfolio() {
     ];
 
     return (
-        <div>
-            <p>Portfolio</p>
-            <hr />
-
-            <Project projects={projects}></Project>
-        </div>
+        <section className='tile is-ancestor'>
+            <div className='tile is-vertical is-parent'>
+                <div className='tile is-child is-4'>
+                    <h2>Name1</h2>
+                    <img src='../../assets/images/ship-space' alt='Ship Space Homepage'></img>
+                </div>
+                <div className='tile is-child is-4'>
+                    <h2>Name2</h2>
+                </div>
+            </div>
+            <div className='tile is-vertical is-parent'>
+                <div className='tile is-child is-4'>
+                    <h2>Name1</h2>
+                </div>
+                <div className='tile is-child is-4'>
+                    <h2>Name2</h2>
+                </div>
+            </div>
+            <div className='tile is-vertical is-parent'>
+                <div className='tile is-child is-4'>
+                    <h2>Name1</h2>
+                </div>
+                <div className='tile is-child is-4'>
+                    <h2>Name2</h2>
+                </div>
+            </div>
+        </section>
     );
+
+
 };
 
 
 
 
 export default Portfolio;
+/*
+<div>
+<p>Portfolio</p>
+<hr />
+
+<Project projects={projects}></Project>
+</div> */
