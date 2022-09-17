@@ -1,31 +1,25 @@
 import React from 'react';
 
 function Nav(props) {
- const tabs = ['About', 'Portfolio', 'Contact', 'Resume'];
+ const { currentPage, setCurrentPage } = props;
 
  return (
-  <section className='hero'>
-    <ul className='nav nav-tabs'>
-      {tabs.map((tab) => (
-        <li
-          className = {
-            props.currentPage === tab ? 'nav-item is-active' : 'nav-item'
-          }
-          key = {tab}
-        >
-          <a
-            href={'#' + tab.toLowerCase()}
-            onClick={() => props.handlePageChange(tab)}
-            className={
-              props.currentPage === tab ? 'nav-link active' : 'nav-link'
-            }
-          >
-            {tab}
-          </a>
-        </li>
-      ))}
+  <nav>
+    <ul className='is-flex-direction-row'>
+      <li className={currentPage === 'about' ? 'mx-2 navActive' : 'mx-2'}>
+        <span onClick={() => setCurrentPage('about')}>About Me</span>
+      </li>
+      <li className={currentPage === 'portfolio' ? 'mx-2 navActive' : 'mx-2'}>
+        <span onClick={() => setCurrentPage('portfolio')}>Portfolio</span>
+      </li>
+      <li className={currentPage === 'resume' ? 'mx-2 navActive' : 'mx-2'}>
+        <span onClick={() => setCurrentPage('resume')}>Resume</span>
+      </li>
+      <li className={currentPage === 'contact' ? 'mx-2 navActive' : 'mx-2'}>
+        <span onClick={() => setCurrentPage('contact')}>Contact</span>
+      </li>
     </ul>
-  </section>
+  </nav>
  );
 }
 
