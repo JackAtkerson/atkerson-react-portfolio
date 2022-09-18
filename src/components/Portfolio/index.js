@@ -1,93 +1,102 @@
 import React from 'react';
 import Project from '../Project';
+import pitcherPerfect from '../../assets/images/pitcher-perfect.png';
+import shipSpace from '../../assets/images/ship-space.png';
+import clothingStore from '../../assets/images/clothing-store.jpeg';
+import budgetTracker from '../../assets/images/budget-tracker.png';
+import passwordGenerator from '../../assets/images/password-generator.jpeg';
+import horiseon from '../../assets/images/horiseon.png';
+
 
 function Portfolio() {
     const projects = [
         {
             name: 'Pitcher Perfect',
-            image: '../../assets/images/pitcher-perfect.png',
-            description: 'An app that will locate breweries in your area',
+            image: pitcherPerfect,
+            description: 'An app that will locate breweries in your area.',
             repo: 'https://github.com/JackAtkerson/pitcher-perfect',
-            link: ''
+            link: 'https://jackatkerson.github.io/pitcher-perfect/'
         },
         {
             name: 'Ship Space',
-            image: '../../assets/images/ship-space.png',
-            description: 'A website used for logistics',
+            image: shipSpace,
+            description: 'An inventory and warehouse management application.',
             repo: 'https://github.com/JackAtkerson/ship-space',
             link: 'https://ship-space.herokuapp.com/'
         },
         {
+            name: 'Clothing Store',
+            image: clothingStore,
+            description: 'Coming Soon',
+            repo: 'https://github.com/JackAtkerson/clothing-store',
+            link: ''
+        },
+        {
             name: 'Budget Tracker',
-            image: '../../assets/images/',
-            description: '',
-            repo: '',
+            image: budgetTracker,
+            description: 'A budget tracking tool with a graph to viualize your finances.',
+            repo: 'https://github.com/JackAtkerson/atkerson-budget-tracker',
             link: ''
         },
         {
-            name: 'Run Buddy',
-            image: '../../assets/images/run-buddy.png',
-            description: '',
-            repo: '',
-            link: ''
-        },
-        {
-            name: 'Robot Gladiators',
-            image: '../../assets/images/robot-gladiators.png',
-            description: '',
-            repo: '',
-            link: ''
+            name: 'Password Generator',
+            image: passwordGenerator,
+            description: 'An application that generates a random password according to user criteria.',
+            repo: 'https://github.com/JackAtkerson/js-password-generator.git',
+            link: 'https://jackatkerson.github.io/js-password-generator/'
         },
         {
             name: 'Horiseon',
-            image: '../../assets/images/horiseon.png',
-            description: 'Good site',
-            repo: '',
-            link: ''
-        },
+            image: horiseon,
+            description: 'A web development and social media management website',
+            repo: 'https://github.com/JackAtkerson/atkerson-challenge-01.git',
+            link: 'https://jackatkerson.github.io/atkerson-challenge-01/'
+        }
     ];
 
     return (
-        <section className='tile is-ancestor'>
-            <div className='tile is-vertical is-parent'>
-                <div className='tile is-child is-4'>
-                    <h2>Name1</h2>
-                    <img src='../../assets/images/ship-space' alt='Ship Space Homepage'></img>
-                </div>
-                <div className='tile is-child is-4'>
-                    <h2>Name2</h2>
-                </div>
+        <section>
+            <div>
+                <h1 className='section-title'>My Portfolio</h1>
             </div>
-            <div className='tile is-vertical is-parent'>
-                <div className='tile is-child is-4'>
-                    <h2>Name1</h2>
-                </div>
-                <div className='tile is-child is-4'>
-                    <h2>Name2</h2>
-                </div>
-            </div>
-            <div className='tile is-vertical is-parent'>
-                <div className='tile is-child is-4'>
-                    <h2>Name1</h2>
-                </div>
-                <div className='tile is-child is-4'>
-                    <h2>Name2</h2>
-                </div>
+            <div>
+                <ul className='projects-container'>
+                    <li>
+                        <div className='project'>
+                            <Project projects={projects[0]}></Project>
+                        </div>
+                    </li>
+                    <li>
+                        <div className='project'>
+                            <Project projects={projects[1]}></Project>
+                        </div>
+                    </li>
+                    <li>
+                        <div className='project'>
+                            <Project projects={projects[2]}></Project>
+                        </div>
+                    </li>
+                </ul>
+                <ul className='projects-container'>
+                    <li>
+                        <div className='project'>
+                            <Project projects={projects[3]}></Project>
+                        </div>
+                    </li>
+                    <li>
+                        <div className='project'>
+                            <Project projects={projects[4]}></Project>
+                        </div>
+                    </li>
+                    <li>
+                        <div className='project'>
+                            <Project projects={projects[5]}></Project>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
-    );
-
-
+    )
 };
 
-
-
-
 export default Portfolio;
-/*
-<div>
-<p>Portfolio</p>
-<hr />
-
-<Project projects={projects}></Project>
-</div> */

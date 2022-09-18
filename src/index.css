@@ -63,7 +63,7 @@ p {
 }
 
 a {
-  color: var(--tertiary);
+  color: var(--secondary);
   text-decoration: none;
   font-weight: bold;
 }
@@ -265,4 +265,26 @@ a {
   padding-bottom: 10px;
   margin: 0 auto 35px auto;
   width: 50%;
- }   
+ }
+
+ .projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 25px;
+  padding-bottom: 25px;
+ }
+
+ .card {
+  width: 300px;
+  color: var(--dark);
+ }
+
+ .media-content {
+  text-align: center;
+ }
+
+ .card-content a {
+  color: var(--secondary)
+ }
