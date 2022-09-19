@@ -305,6 +305,11 @@ a {
   justify-content: space-around
  }
 
+ .ftr-link {
+  padding: 5px;
+  width: 64px;
+ }
+
  #resume {
   text-align: center;
  }
