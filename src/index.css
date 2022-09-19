@@ -318,3 +318,8 @@ a {
   color: var(--secondary);
   text-decoration: underline;
  }
+
+ #contact-form {
+  text-align: center;
+  padding-left: 300px;
+ }
