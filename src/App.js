@@ -17,7 +17,7 @@ const renderPage = () => {
       return <Portfolio />;
     case 'resume':
       return <Resume />;
-    case 'Contact':
+    case 'contact':
       return <Contact />;
     default: return null;
   }

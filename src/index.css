@@ -1,4 +1,3 @@
-
 main {
 	margin: 0 auto;
 	max-width: 90%;
@@ -287,4 +286,13 @@ a {
 
  .card-content a {
   color: var(--secondary)
+ }
+
+ .footer {
+  background: var(--primary);
+  color: var(--secondary);
+ }
+
+ .footer a {
+  color: var(--secondary);
  }
