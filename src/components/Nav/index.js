@@ -15,8 +15,8 @@ function Nav(props) {
       <li className='home-link'>
         <span>Jack Atkerson</span>
       </li>
-      <li className={currentPage === "resume" ? "mx-2 navActive" : "mx-2"}>
-					<span onClick={() => setCurrentPage("resume")}>Resume</span>
+      <li className={currentPage === 'resume' ? 'mx-2 navActive' : 'mx-2'}>
+					<span onClick={() => setCurrentPage('resume')}>Resume</span>
 				</li>
       <li className={currentPage === 'contact' ? 'mx-2 navActive' : 'mx-2'}>
         <span onClick={() => setCurrentPage('contact')}>Contact</span>

@@ -42,6 +42,7 @@ h2 {
 
 h3 {
   font-size: 1.75rem;
+  text-decoration: underline;
 }
 
 h4 {
@@ -295,4 +296,20 @@ a {
 
  .footer a {
   color: var(--secondary);
+ }
+
+ .proficiencies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around
+ }
+
+ #resume {
+  text-align: center;
+ }
+
+ #resume a {
+  color: var(--secondary);
+  text-decoration: underline;
  }
