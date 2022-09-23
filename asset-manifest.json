@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/atkerson-react-portfolio/static/css/main.45d92cdf.css",
-    "main.js": "/atkerson-react-portfolio/static/js/main.dae05713.js",
+    "main.js": "/atkerson-react-portfolio/static/js/main.33f74952.js",
     "static/js/787.19aa93d5.chunk.js": "/atkerson-react-portfolio/static/js/787.19aa93d5.chunk.js",
     "static/media/horiseon.png": "/atkerson-react-portfolio/static/media/horiseon.1d6c7e7691e959019654.png",
+    "static/media/clothing-store.png": "/atkerson-react-portfolio/static/media/clothing-store.2d957ee0d567e10aa32a.png",
     "static/media/pitcher-perfect.png": "/atkerson-react-portfolio/static/media/pitcher-perfect.8d24ea41b8c6e74c27a5.png",
     "static/media/budget-tracker.png": "/atkerson-react-portfolio/static/media/budget-tracker.251982c3e540a18a6c26.png",
     "static/media/ship-space.png": "/atkerson-react-portfolio/static/media/ship-space.e2767611df7df8f4ca8b.png",
@@ -12,14 +13,13 @@
     "static/media/resume.pdf": "/atkerson-react-portfolio/static/media/resume.d32be35c3d86993f2796.pdf",
     "static/media/atkerson-resume.png": "/atkerson-react-portfolio/static/media/atkerson-resume.27b46d971a50681113a2.png",
     "static/media/about_headshot.jpg": "/atkerson-react-portfolio/static/media/about_headshot.5e3501a06876141fa441.jpg",
-    "static/media/clothing-store.jpeg": "/atkerson-react-portfolio/static/media/clothing-store.b4c1850578409ef598b0.jpeg",
     "index.html": "/atkerson-react-portfolio/index.html",
     "main.45d92cdf.css.map": "/atkerson-react-portfolio/static/css/main.45d92cdf.css.map",
-    "main.dae05713.js.map": "/atkerson-react-portfolio/static/js/main.dae05713.js.map",
+    "main.33f74952.js.map": "/atkerson-react-portfolio/static/js/main.33f74952.js.map",
     "787.19aa93d5.chunk.js.map": "/atkerson-react-portfolio/static/js/787.19aa93d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.45d92cdf.css",
-    "static/js/main.dae05713.js"
+    "static/js/main.33f74952.js"
   ]
 }
