@@ -2,7 +2,7 @@ import React from 'react';
 import Project from '../Project';
 import pitcherPerfect from '../../assets/images/pitcher-perfect.png';
 import shipSpace from '../../assets/images/ship-space.png';
-import clothingStore from '../../assets/images/clothing-store.jpeg';
+import clothingStore from '../../assets/images/clothing-store.png';
 import budgetTracker from '../../assets/images/budget-tracker.png';
 import passwordGenerator from '../../assets/images/password-generator.jpeg';
 import horiseon from '../../assets/images/horiseon.png';
@@ -25,9 +25,9 @@ function Portfolio() {
             link: 'https://ship-space.herokuapp.com/'
         },
         {
-            name: 'Clothing Store',
+            name: 'Music City Sports',
             image: clothingStore,
-            description: 'Coming Soon',
+            description: 'An e-commerce site created for a hypothetical local business.',
             repo: 'https://github.com/JackAtkerson/clothing-store',
             link: ''
         },
